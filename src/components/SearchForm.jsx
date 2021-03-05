@@ -4,9 +4,7 @@ import {
     Field,
     Label,
     Button,
-    Input,
-    Select,
-    Option
+    Input
 } from 'bloomer';
 
 class SearchForm extends Component {

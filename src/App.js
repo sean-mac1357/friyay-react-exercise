@@ -1,8 +1,7 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import 'bulma/css/bulma.css';
 import SearchForm from './components/SearchForm';
-import BookCard from './components/BookCard';
 
 function App() {
   return (
