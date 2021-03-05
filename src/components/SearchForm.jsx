@@ -24,7 +24,7 @@ class SearchForm extends Component {
 
     _handleSubmit = async (event) => {
         event.preventDefault();
-        const newAuthorData = await fetch (`http://openlibrary.org/search.json?author=${this.state.author}`)
+        const newAuthorData = await fetch (`https://openlibrary.org/search.json?author=${this.state.author}`)
             .then(response => response.json())
         this.setState({
             authorArray: [...this.state.authorArray, newAuthorData]
