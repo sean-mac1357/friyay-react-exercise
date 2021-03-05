@@ -2,7 +2,7 @@ import BookCard from './BookCard';
 
 const BookCardList = (props) => {
     const { authorArray } = props;
-    console.log(authorArray)
+    console.log("author array is: ", authorArray)
 
     return (
         <ul>
