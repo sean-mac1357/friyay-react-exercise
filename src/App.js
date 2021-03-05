@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import 'bulma/css/bulma.css';
+import SearchForm from './components/SearchForm';
+import BookCard from './components/BookCard';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Whats Your favorite Author most famous for?</h1>
       </header>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <SearchForm />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
